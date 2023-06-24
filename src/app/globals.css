@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.banner-container {
+  display: grid;
+  place-items: center;
+  background-color: #F1F1F1; /* Set the background color */
+  height: 50vh; /* Set the height for regular screens */
+}
+
+@media (min-width: 1024px) {
+  /* Media query for large screens */
+  .banner-container {
+    height: 70vh; /* Set the height for large screens */
+  }
+}
